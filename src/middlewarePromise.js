@@ -1,6 +1,6 @@
 const promiseMiddleware = (req, res, next) => {
     asyncFunc().then(() => {
-            console.log('after 10000 ms of middlewarePromise');
+            console.log('after 10000 ms of middlewarePromise');//wont print as within 5 sec promise got rejected
             next();
         }).catch(() => {
             console.log('after 5000 ms of middlewarePromise');

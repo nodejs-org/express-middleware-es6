@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel -w src -d dist"
+    "build": "babel -w src -d dist",
+    "run-server": "node dist/index.js",
+    "build-watch": "babel -w src -d dist"
   },
   "author": "",
   "license": "ISC",
